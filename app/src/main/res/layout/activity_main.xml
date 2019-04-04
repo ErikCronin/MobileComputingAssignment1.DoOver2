@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit_converter"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/about_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:text="@string/about_buttons_press"
+                android:onClick="about_buttonClicked"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/cNf_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/celsius_and_fahrenheit_conversion" />
+
+    <EditText
+        android:id="@+id/cNf_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:ems="5"
+        android:hint="@string/input_here"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/cTf_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/celsius_to_fahrenheit"
+                android:onClick="cTf_buttonClicked"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/fTc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/fahrenheit_to_celsius"
+                android:onClick="fTc_buttonClicked"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/kNm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/kilometres_and_miles_conversion" />
+
+    <EditText
+        android:id="@+id/kNm_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:ems="5"
+        android:hint="@string/input_here"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/kTm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/kilometres_to_miles"
+                android:onClick="kTm_buttonClicked"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/mTk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/miles_to_kilometres"
+                android:onClick="mTk_buttonClicked"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/kNp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/kilograms_and_pounds_conversion" />
+
+    <EditText
+        android:id="@+id/kNp_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:ems="5"
+        android:hint="@string/input_here"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/kTp_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/kilograms_to_pounds"
+                android:onClick="kTp_buttonClicked"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/pTk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/pounds_to_kilograms"
+                android:onClick="pTk_buttonClicked"
+                tools:ignore="ButtonStyle" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

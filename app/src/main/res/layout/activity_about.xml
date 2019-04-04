@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/uptime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_uptime"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="56sp"/>
+
+    <TextView
+        android:id="@+id/formula_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulas"
+        android:textSize="24sp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/cel_to_fahren_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ctf_formula_text"
+                android:layout_marginEnd="24dp"/>
+
+            <TextView
+                android:id="@+id/cel_to_fahren_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ctf_formula" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fahren_to_cel_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ftc_formula_text" />
+
+            <TextView
+                android:id="@+id/fahren_to_cel_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ftc_formula" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/kilom_to_mile_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ktm_formula_text" />
+
+            <TextView
+                android:id="@+id/kilom_to_mile_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ktm_formula" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mile_to_kilom_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mtk_formula_text" />
+
+            <TextView
+                android:id="@+id/mile_to_kilom_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mtk_formula" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/kilog_to_pound_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ktp_formula_text" />
+
+            <TextView
+                android:id="@+id/kilog_to_pound_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ktp_formula" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/pound_to_kilog_formula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ptk_formula_text" />
+
+            <TextView
+                android:id="@+id/pound_to_kilog_formula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ptk_formula" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
